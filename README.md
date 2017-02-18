@@ -1,8 +1,8 @@
 Apache Spark on Docker
 ==========
 
-> This is a fork of https://github.com/sequenceiq/docker-spark repository
-> that just provides Spark 2.0.2
+> This is a fork of https://github.com/antlypls/docker-spark repository
+> that just provides Spark 1.6.2
 
 This repository contains a Docker file to build a Docker image with Apache Spark.
 This Docker image depends on [Hadoop Docker](https://github.com/sequenceiq/hadoop-docker) image.
