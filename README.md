@@ -9,12 +9,12 @@ This Docker image depends on [Hadoop Docker](https://github.com/sequenceiq/hadoo
 
 ##Pull the image from Docker Repository
 ```
-docker pull mattiaz88/spark:2.0.2
+docker pull mattiaz88/spark:2.1.0
 ```
 
 ## Building the image
 ```
-docker build --rm -t mattiaz88/spark:2.0.2 .
+docker build --rm -t mattiaz88/spark:2.1.0 .
 ```
 
 ## Running the image
@@ -23,16 +23,16 @@ docker build --rm -t mattiaz88/spark:2.0.2 .
 * in your /etc/hosts file add $(boot2docker ip) as host 'sandbox' to make it easier to access your sandbox UI
 * open yarn UI ports when running container
 ```
-docker run -it -p 8088:8088 -p 8042:8042 -h sandbox mattiaz88/spark:2.0.2 bash
+docker run -it -p 8088:8088 -p 8042:8042 -h sandbox mattiaz88/spark:2.1.0 bash
 ```
 or
 ```
-docker run -d -h sandbox mattiaz88/spark:2.0.2 -d
+docker run -d -h sandbox mattiaz88/spark:2.1.0 -d
 ```
 
 ## Versions
 ```
-Hadoop 2.7.0 and Apache Spark v2.0.2 on Centos
+Hadoop 2.7.0 and Apache Spark v2.1.0 on Centos
 ```
 
 ## Testing
@@ -70,7 +70,7 @@ spark-submit \
 --driver-memory 1g \
 --executor-memory 1g \
 --executor-cores 1 \
-$SPARK_HOME/lib/spark-examples-2.0.2-hadoop2.7.0.jar
+$SPARK_HOME/lib/spark-examples-2.1.0-hadoop2.7.0.jar
 ```
 
 Estimating Pi (yarn-client mode):
@@ -83,5 +83,5 @@ spark-submit \
 --driver-memory 1g \
 --executor-memory 1g \
 --executor-cores 1 \
-$SPARK_HOME/lib/spark-examples-2.0.2-hadoop2.7.0.jar
+$SPARK_HOME/lib/spark-examples-2.1.0-hadoop2.7.0.jar
 ```
