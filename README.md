@@ -32,7 +32,7 @@ docker run -d -h sandbox mattiaz88/spark:2.1.0 -d
 
 ## Versions
 ```
-Hadoop 2.7.0 and Apache Spark v2.1.0 on Centos
+Hadoop 2.7.1 and Apache Spark v2.1.0 on Centos
 ```
 
 ## Testing
@@ -70,7 +70,7 @@ spark-submit \
 --driver-memory 1g \
 --executor-memory 1g \
 --executor-cores 1 \
-$SPARK_HOME/lib/spark-examples-2.1.0-hadoop2.7.0.jar
+$SPARK_HOME/lib/spark-examples-2.1.0-hadoop2.7.1.jar
 ```
 
 Estimating Pi (yarn-client mode):
@@ -83,5 +83,5 @@ spark-submit \
 --driver-memory 1g \
 --executor-memory 1g \
 --executor-cores 1 \
-$SPARK_HOME/lib/spark-examples-2.1.0-hadoop2.7.0.jar
+$SPARK_HOME/lib/spark-examples-2.1.0-hadoop2.7.1.jar
 ```
